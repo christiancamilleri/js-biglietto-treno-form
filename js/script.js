@@ -37,15 +37,15 @@ btnEl.addEventListener("click", function() {
 
     if(userAgeEl.value < 18) {
        
-        console.log(ticketPriceU18);
+        document.writeln(ticketPriceU18.toFixed(2)+ "€");
        
     } else if(userAgeEl.value >= 65) {
 
-        console.log(ticketPriceO65);
+        document.writeln(ticketPriceO65.toFixed(2)+ "€");
 
     } else{
 
-        console.log("ticketPrice");
+        document.writeln(ticketPrice.toFixed(2)+ "€");
     }
 
 
