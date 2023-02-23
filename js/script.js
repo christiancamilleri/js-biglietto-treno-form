@@ -33,17 +33,17 @@ let ticktPriceO65 = ticketPrice - ticketPrice / 100 * 40;
 
 
 
-btn.addEventListener("click", function() {
+btnEl.addEventListener("click", function() {
 
     if(userAgeEl < 18) {
        
-        console.log(ticketPriceU18);
+        document.writeln(ticketPriceU18);
        
     } else if(userAgeEl >= 65) {
-        console.log(ticktPriceO65)
+        document.writeln(ticktPriceO65)
     }
 
 
-})
+});
 
 
