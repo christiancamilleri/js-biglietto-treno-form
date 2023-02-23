@@ -32,22 +32,32 @@ btnEl.addEventListener("click", function() {
 
     let ticketPriceU18 = ticketPrice - ticketPrice / 100 * 20;
 
-    let ticktPriceO65 = ticketPrice - ticketPrice / 100 * 40;
+    let ticketPriceO65 = ticketPrice - ticketPrice / 100 * 40;
 
 
     if(userAgeEl.value < 18) {
        
-        document.writeln(ticketPriceU18.toFixed(2)+ "€");
+        document.getElementById("namesurname").innerHTML = userNameEl.value + (" ") + userSurnameEl.value
+        document.getElementById("tariffa").innerHTML = ("Sconto giovani")
+        document.getElementById("scontoprevisto").innerHTML = ("20%")
+        document.getElementById("costototale").innerHTML = ticketPriceU18.toFixed(2) + ("€")
        
     } else if(userAgeEl.value >= 65) {
 
-        document.writeln(ticketPriceO65.toFixed(2)+ "€");
+        document.getElementById("namesurname").innerHTML = userNameEl.value + (" ") + userSurnameEl.value
+        document.getElementById("tariffa").innerHTML = ("Sconto anziani")
+        document.getElementById("scontoprevisto").innerHTML = ("40%")
+        document.getElementById("costototale").innerHTML = ticketPriceO65.toFixed(2) + ("€")
+       
 
     } else{
 
-        document.writeln(ticketPrice.toFixed(2)+ "€");
-    }
+        document.getElementById("namesurname").innerHTML = userNameEl.value + (" ") + userSurnameEl.value
+        document.getElementById("tariffa").innerHTML = ("Tariffa Standard")
+        document.getElementById("scontoprevisto").innerHTML = ("Nessuno sconto previsto")
+        document.getElementById("costototale").innerHTML = ticketPrice.toFixed(2) + ("€")
 
+    }
 
 });
 
