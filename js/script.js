@@ -34,6 +34,10 @@ btnEl.addEventListener("click", function() {
 
     let ticketPriceO65 = ticketPrice - ticketPrice / 100 * 40;
 
+    let openMytiicketEl = document.querySelector(".myticket")
+
+    openMytiicketEl.style.display = "block";
+
 
     if(userAgeEl.value < 18) {
        

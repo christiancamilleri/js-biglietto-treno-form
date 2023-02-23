@@ -29,3 +29,7 @@ main .container{
 main .container h3 {
     color: #fec009;
 }
+
+.myticket {
+    display: none;
+}
