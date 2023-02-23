@@ -25,22 +25,27 @@ let userAgeEl = document.getElementById("userAge");
 
 let btnEl = document.getElementById("btn");
 
-let ticketPrice = userKmToDoEl * priceForKm;
-
-let ticketPriceU18 = ticketPrice - ticketPrice / 100 * 20;
-
-let ticktPriceO65 = ticketPrice - ticketPrice / 100 * 40;
-
-
 
 btnEl.addEventListener("click", function() {
 
-    if(userAgeEl < 18) {
+    let ticketPrice = userKmToDoEl.value * priceForKm;
+
+    let ticketPriceU18 = ticketPrice - ticketPrice / 100 * 20;
+
+    let ticktPriceO65 = ticketPrice - ticketPrice / 100 * 40;
+
+
+    if(userAgeEl.value < 18) {
        
-        document.writeln(ticketPriceU18);
+        console.log(ticketPriceU18);
        
-    } else if(userAgeEl >= 65) {
-        document.writeln(ticktPriceO65)
+    } else if(userAgeEl.value >= 65) {
+
+        console.log(ticketPriceO65);
+
+    } else{
+
+        console.log("ticketPrice");
     }
 
 
