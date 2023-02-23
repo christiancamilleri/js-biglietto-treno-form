@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#myheader {
+    color: red;
+    text-align: center;
+}
+
+.b-c {
+    background-color: #303135;
+}
+
+main h2 {
+    color: beige;
+}
+
+main p{
+    color: red;
+}
+
+main .container{
+    background-color: blue;
+}
+
+main .container h3 {
+    color: #fec009;
+}

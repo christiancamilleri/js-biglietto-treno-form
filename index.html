@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Train ticket</title>
 </head>
-<body>
+<body class="b-c">
 
-    <div>
+    <!-- <div>
        
         <input id="userName" type="text" placeholder="Nome">
         <input id="userSurname" type="text" placeholder="Cognome">
@@ -28,7 +31,44 @@
 
         <button id="btn">Genera biglietto</button>
 
-    </div>
+    </div> -->
+
+    <header id="myheader">
+
+        <h1>BOOTRAIN</h1>
+
+    </header>
+
+    <main>
+        <h2 class="text-center pt-5">Inserisci qui le tue info</h2>
+
+        <p class="text-center"><ins>Se sei minorenne o hai più di 65 anni avrai diritto a degli sconti escluusivi!</ins></p>
+        
+        <div class="container rounded p-3 my-5">
+
+            <div class="row">
+                <div class="col-3 text-center"><h3>Nome</h3></div>
+                <div class="col-3 text-center"><h3>Cognome</h3></div>
+                <div class="col-3 text-center"><h3>Km da percorrere</h3></div>
+                <div class="col-3 text-center"><h3>Quanti anni hai?</h3></div>
+            </div>
+            <div class="row my-3">
+                <div class="col-3 text-center"><input id="userName" class="rounded-4 border-0" type="text"></div>
+                <div class="col-3 text-center"><input id="userSurname" class="rounded-4 border-0" type="text"></div>
+                <div class="col-3 text-center"><input id="userKmToDo" class="rounded-4 border-0" type="number"></div>
+                <div class="col-3 text-center"><input id="userAge" class="rounded-4 border-0" type="number"></div>
+            </div>
+            <div class="my-btn d-flex justify-content-center gap-5 my-5">
+                
+                <button id="btn" type="button" class="btn btn-dark">Continua</button>
+                <button id="btn" type="button" class="btn btn-warning">Annulla</button>
+            
+            </div>
+
+        </div>
+
+        
+    </main>
 
 
     <script type="text/javascript" src="js/script.js"></script>
